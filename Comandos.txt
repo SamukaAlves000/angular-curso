@@ -1,0 +1,3 @@
+ng new nome-projeto - Criar um novo projeto
+ng g c nome-componente - Criar um novo componente
+ng g m nome-modulo - Criar um novo módulo
