@@ -7,7 +7,7 @@ export class CursosService {
 
   constructor() { }
 
-  getCursos():string[]{
+  getCursos(){
     return ["JAVA","C#",".NET","Angular 9"]
   }
 }
