@@ -1,5 +1,5 @@
-<section class="property-binding">
-   <!-- <article>
+<!-- <section class="property-binding">
+   <article>
         <h3>Interpolação/Interpolation</h3>
         <p>String renderizada com Interpolação : {{url}}</p>
         <p>Resultado de 1 + 1 é :{{1+1}}</p>
@@ -37,7 +37,7 @@
         <input type="text" (keyup) ="onKeyUp($event)">
         <p>Valor atual: {{valorAtual}}</p>
     </div>
-    </article>-->
+    </article>
     <article>
         <h3>Two-way data Binding</h3>
     <div>
@@ -54,5 +54,13 @@
             <input type="text" [(ngModel)]="pessoa.idade">
         </div>
     </div>
-    </article>-
+    </article>
+</section>-->
+
+<section class="input-output-properties">
+    <article>
+        <h3>Input/Output Properties</h3>
+        <app-curso [nome] = "nomeDoCurso" [name] = "pessoa.nome"></app-curso>
+        
+    </article>
 </section>

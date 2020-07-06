@@ -16,6 +16,9 @@ export class DataBindingComponent implements OnInit {
     nome: "samuel",
     idade: 23
   }
+
+  nomeDoCurso:string = 'Angular'
+  
   constructor() { }
 
   getValor(){
