@@ -17,8 +17,10 @@ export class DataBindingComponent implements OnInit {
     idade: 23
   }
 
+  valorInicial : number = 5
+
   nomeDoCurso:string = 'Angular'
-  
+
   constructor() { }
 
   getValor(){
@@ -35,6 +37,10 @@ export class DataBindingComponent implements OnInit {
   onKeyUp(evento: KeyboardEvent){
     console.log(evento)
     this.valorAtual = (<HTMLInputElement>evento.target).value
+  }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor)
   }
 
 
