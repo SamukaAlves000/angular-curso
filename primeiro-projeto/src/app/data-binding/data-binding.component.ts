@@ -9,6 +9,8 @@ export class DataBindingComponent implements OnInit {
 
   url : string = "https://loiane.training/"
   urlImagem = "http://lorempixel.com/400/200/nature/"
+  valorAtual = ""
+  
   constructor() { }
 
   getValor(){
@@ -17,5 +19,15 @@ export class DataBindingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  botaoClicado(){
+    alert("Clicou no botão")
+  }
+
+  onKeyUp(evento: KeyboardEvent){
+    console.log(evento)
+    this.valorAtual = (<HTMLInputElement>evento.target).value
+  }
+
 
 }
