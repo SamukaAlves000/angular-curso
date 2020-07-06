@@ -27,7 +27,7 @@
             </select>
 
         </div>
-    </article>-->
+    </article>
     <article>
         <h3>Event Binding</h3>
     <div>
@@ -37,6 +37,22 @@
         <input type="text" (keyup) ="onKeyUp($event)">
         <p>Valor atual: {{valorAtual}}</p>
     </div>
-    </article>
-    
+    </article>-->
+    <article>
+        <h3>Two-way data Binding</h3>
+    <div>
+
+        <input type="text" [value] ="nome" (input) ="nome = $event.target.value">
+        <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
+        <input type="text" [(ngModel)]="nome">
+        <input type="text" bindon-ngModel="nome">
+        <p>Você digitou:{{nome}}</p>
+
+        <div>
+            <p>Meu nome é : {{pessoa.nome}} e tenho {{pessoa.idade}} anos</p>
+            <input type="text" [(ngModel)]="pessoa.nome">
+            <input type="text" [(ngModel)]="pessoa.idade">
+        </div>
+    </div>
+    </article>-
 </section>

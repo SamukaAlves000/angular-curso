@@ -10,7 +10,12 @@ export class DataBindingComponent implements OnInit {
   url : string = "https://loiane.training/"
   urlImagem = "http://lorempixel.com/400/200/nature/"
   valorAtual = ""
-  
+  nome = "abc"
+
+  pessoa: any = {
+    nome: "samuel",
+    idade: 23
+  }
   constructor() { }
 
   getValor(){
