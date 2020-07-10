@@ -24,10 +24,10 @@ export class OutputPropertyComponent implements OnInit {
     this.mudouValor.emit({novoValor : this.valor})
   }
 
-
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
